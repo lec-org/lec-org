@@ -1,0 +1,29 @@
+:root {
+	/* Font Sizes */
+
+	/* Heading Sizes */
+	--H1: 22px;
+	--H2: 20px;
+	--H3: 18px;
+
+	/* Title Sizes */
+	--T1: 18px;
+	--T2: 16px;
+	--T3: 14px;
+
+	/* Body Sizes */
+	--B1: 16px;
+	--B2: 14px;
+
+	/* Caption Sizes */
+	--C1: 14px;
+	--C2: 12px;
+
+	/* Font Weights */
+	--Regular: 400;
+	--Medium: 500;
+	--SemiBold: 600;
+	--Bold: 700;
+
+	/* Line Heights */
+}

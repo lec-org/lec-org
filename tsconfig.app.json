@@ -21,7 +21,17 @@
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true
+		"noFallthroughCasesInSwitch": true,
+
+		/* Alias */
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"],
+			"@/styles/*": ["src/styles/*"],
+			"@/components/*": ["src/components/*"],
+			"@/utils/*": ["src/utils"],
+			"@/constants/*": ["src/constants"]
+		}
 	},
 	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

@@ -1,0 +1,17 @@
+@import './colors.css';
+@import './typography.css';
+
+.T1 {
+	font-size: var(--T1);
+	font-weight: var(--semibold);
+}
+
+.T2 {
+	font-size: var(--T2);
+	font-weight: var(--Medium);
+}
+
+.T3 {
+	font-size: var(--T3);
+	font-weight: var(--Medium);
+}
