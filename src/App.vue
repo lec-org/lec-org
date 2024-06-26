@@ -1,30 +1,33 @@
-<script setup lang="ts">
-	import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-	<div>
-		<a href="https://vitejs.dev" target="_blank">
-			<img src="/vite.svg" class="logo" alt="Vite logo" />
-		</a>
-		<a href="https://vuejs.org/" target="_blank">
-			<img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-		</a>
+	<div class="main">
+		<div class="H1 title">LEC Org App</div>
+		<div class="welcome">Welcome to LEC Org Website</div>
 	</div>
-	<HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-	.logo {
-		height: 6em;
-		padding: 1.5em;
-		will-change: filter;
-		transition: filter 300ms;
-	}
-	.logo:hover {
-		filter: drop-shadow(0 0 2em #646cffaa);
-	}
-	.logo.vue:hover {
-		filter: drop-shadow(0 0 2em #42b883aa);
-	}
+<script setup></script>
+
+<style lang="stylus" scoped>
+	.main
+		width 100%
+		height 100%
+		display flex
+		justify-content center
+		flex-direction column
+		background var(--lec-quaternary)
+		.title
+			height 40px
+			width  100%
+			color var(--lec-primary)
+			background transparent
+			backdrop-filter blur(50px)
+			border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+			text-align center
+		.welcome
+			flex 1
+			display flex
+			justify-content center
+			align-items center
+			font-size 2.5rem
+			color var(--lec-secondary)
 </style>

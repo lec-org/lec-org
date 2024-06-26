@@ -1,9 +1,14 @@
 @import './colors.css';
 @import './typography.css';
 
+.H1 {
+	font-size: var(--H1);
+	font-weight: var(--Bold);
+}
+
 .T1 {
 	font-size: var(--T1);
-	font-weight: var(--semibold);
+	font-weight: var(--SemiBold);
 }
 
 .T2 {
@@ -14,4 +19,15 @@
 .T3 {
 	font-size: var(--T3);
 	font-weight: var(--Medium);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#app {
+	width: 100vw;
+	height: 100vh;
 }
