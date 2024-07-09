@@ -29,8 +29,9 @@
 			"@/*": ["src/*"],
 			"@/styles/*": ["src/styles/*"],
 			"@/components/*": ["src/components/*"],
-			"@/utils/*": ["src/utils"],
-			"@/constants/*": ["src/constants"]
+			"@/utils/*": ["src/utils/*"],
+			"@/constants/*": ["src/constants/*"],
+			"@/pages/*": ["src/pages/*"]
 		}
 	},
 	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]

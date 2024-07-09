@@ -10,6 +10,10 @@ export default defineConfig({
 			{
 				find: '@',
 				replacement: resolve(__dirname, 'src')
+			},
+			{
+				find: '@/pages',
+				replacement: resolve(__dirname, 'src/pages')
 			}
 		]
 	}
