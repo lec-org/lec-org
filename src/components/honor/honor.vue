@@ -25,10 +25,10 @@ import ImgGroup from "./honor-imgs.ts";
 			</div>
 			<div class="carousel-container">
 				<div class="img-carousel-item" v-for="group in ImgGroup">
+					<!--出于对性能的考虑, 倾斜效果没有使用carousel的rotate， 而是对container进行rotate-->
 					<img-carousel
 						:duration="group.duration"
 						:rotate="0"
-						transform-origin="top left"
 						:img-list="group.imgs"
 						:repeat="2"
 					/>

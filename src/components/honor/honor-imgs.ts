@@ -1,4 +1,4 @@
-import { chunkArray, shuffleArray } from "./utils";
+import { chunkArray, shuffle } from "@/utils/array-utils";
 
 // 高度压缩后的奖状图片, https://fengyuanchen.github.io/compressorjs/
 const imgs = [
@@ -22,9 +22,9 @@ const imgs = [
   `https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407172336201.jpg`
 ];
 
-const imgGroup = chunkArray(shuffleArray(imgs), 6);
+const imgGroup = chunkArray(shuffle(imgs), 6);
 
-
+// 每一行展示的图片， 以及速度(duration越大速度越慢)
 export default [
   {
     imgs: imgGroup[0],
