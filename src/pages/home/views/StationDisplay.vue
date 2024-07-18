@@ -2,6 +2,13 @@
 	<div class="home1">
     <div class="bg-filter">
       <div class="content-box">
+        <div class="sundry-one">1</div>
+        <div class="sundry-two">2</div>
+        <div class="sundry-three">3</div>
+        <div class="sundry-four">4</div>
+        <div class="sundry-five">5</div>
+        <div class="sundry-six">6</div>
+        <div class="sundry-seven">7</div>
         <div class="title">
           <div class="title-left">
             <div class="title-zh">
@@ -9,11 +16,13 @@
               <div class="title-zh-bottom">Team workstation</div>
             </div>
             <div class="title-en">
+              <div class="title-en-topLine">__________</div>
               <div class="title-en-top">
                 <div>LEC-</div>
                 <div class="en-top-font">LEAGUE</div>
               </div>
               <div class="title-en-bottom">LABORATORY</div>
+              <div class="title-en-bottomIcon"></div>
             </div>
           </div>
           <div class="title-right">
@@ -57,6 +66,20 @@
       justify-content space-around
       height 100%
       width 100%
+      .sundry-one
+        position absolute
+      .sundry-two
+        position absolute
+      .sundry-three
+        position absolute
+      .sundry-four
+        position absolute
+      .sundry-five
+        position absolute
+      .sundry-six
+        position absolute
+      .sundry-seven
+        position absolute
       .title
         padding 0 5%
         width 100%
@@ -93,8 +116,12 @@
             flex-direction column
             justify-content flex-start
             align-items flex-end
-            margin-top 2em
+            margin-top 1em
             margin-right -5em
+            .title-en-topLine
+              color #355ceb
+              margin-right 3.3em
+              margin-bottom -0.3em
             .title-en-top
               font-size 1.25em
               color #424242
@@ -109,6 +136,12 @@
               color #424242
               font-weight bold
               font-family "Microsoft Ya Hei"
+            .title-en-bottomIcon
+              margin-top 0.7em
+              width 3em
+              height 3.3em
+              background-image url("../../../assets/lecIcon.png")
+              background-size cover
         .title-right
           height 100%
           width 23%
@@ -146,5 +179,4 @@
           width 58%
           background-image url("../../../assets/2.jpg")
           background-size cover
-
 </style>
