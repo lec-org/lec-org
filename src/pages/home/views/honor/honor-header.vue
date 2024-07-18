@@ -62,6 +62,7 @@ header {
 .swipe {
   position: absolute;
   height: calc((345 / 280) * 100%);
+  right: 0;
 }
 
 .h1-text {
