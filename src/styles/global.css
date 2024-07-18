@@ -40,3 +40,8 @@
 	
 	src: url(/fonts/LondrinaOutline-Regular.ttf);
 }
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(/fonts/Roboto-MediumItalic.ttf);
+}

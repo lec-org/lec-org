@@ -37,6 +37,7 @@ import ImgGroup from "./honor-imgs.ts";
 </template>
 
 <style scoped>
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
 .honor-page {
 	width: 100vw;
 	height: 100vh;
@@ -57,10 +58,12 @@ import ImgGroup from "./honor-imgs.ts";
 
 .year {
 	font-size: 200px;
-	font-family: 'londrina-outline';
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 3px white;
 	position: absolute;
-	color: white;
-	font-weight: bold;
+	font-family: "Roboto", sans-serif;
+  font-weight: 500;
+	font-style: italic;
 	right: 30px;
 	top: 30px;
 	z-index: 2;
