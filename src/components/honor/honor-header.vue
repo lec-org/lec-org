@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import flower from "@/assets/images/花卉1.png";
 import swipePage from "@/assets/images/撕纸.webp"
 </script>
 
@@ -18,7 +17,7 @@ import swipePage from "@/assets/images/撕纸.webp"
     <div class="gradient">
       <img :src="swipePage" class="swipe" />
     </div>
-    <img class="flower" :src="flower"/>
+    <img class="flower" src="https://trudbot-md-img.oss-cn-shanghai.aliyuncs.com/202407181137654.png"/>
   </header>
 </template>
 
