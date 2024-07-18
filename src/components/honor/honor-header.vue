@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import flower from "@/assets/花卉1.png";
-import swipePage from "@/assets/撕纸.webp"
+import flower from "@/assets/images/花卉1.png";
+import swipePage from "@/assets/images/撕纸.webp"
 </script>
 
 <template>
@@ -9,9 +9,9 @@ import swipePage from "@/assets/撕纸.webp"
       class="header-info"
     >
       <p class="h1-text">FOR THE BETTER LIFE</p>
-      <p class="h1-text">LEC-LABORATORY <span class="divider-suffix">/</span></p>
+      <p class="h1-text">LEC-LABORATORY <span class="divider-suffix"></span></p>
       <div class="join-us">
-        <span class="recruitment">乐程招新啦!</span>
+        <span class="desc">乐程招新啦!</span>
         <span class="join-now">立刻报名 | 加入团队</span>
       </div>
     </div>
@@ -69,7 +69,7 @@ header {
   font-size: calc((75 / 1080) * 100vh);
   letter-spacing: -4px;
   color: #30e6af;
-  font-weight: bold;
+  font-weight: bolder;
   font-family: "Microsoft Ya Hei";
   line-height: 1;
   overflow: hidden;
@@ -77,9 +77,11 @@ header {
 }
 
 .divider-suffix {
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
+  background-color: black;
+  display: inline-block;
+  width: 15px;
+  height: 5vh;
+  transform: skewX(-25deg);
 }
 
 .join-us {
@@ -87,7 +89,7 @@ header {
   width: 100%;
 }
 
-.recruitment {
+.desc {
   font-size: 16px;
   color: white;
   background-color: #000;

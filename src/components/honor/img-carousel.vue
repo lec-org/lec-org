@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<{
   // 无缝轮播至少需要repeat一次
   // 当图片少时可以设置更大的repeat
   repeat: (props) => {
-    if (typeof props.repeat !== 'number' || !props.repeat || props.repeat < 1) {
+    if (!props.repeat || typeof props.repeat !== 'number' || props.repeat < 1) {
       return 1;
     }
     return props.repeat;
@@ -25,7 +25,7 @@ const props = withDefaults(defineProps<{
 
 const container = ref<HTMLElement | null>(null);
 
-useCarouselAnimation(container, props.duration, props.rotate, 'left', 'linear');
+props.imgList.length && useCarouselAnimation(container, props.duration, props.rotate, 'left', 'linear');
 </script>
 
 <template>
