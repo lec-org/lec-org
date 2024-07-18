@@ -44,7 +44,7 @@ header {
 
 .header-info {
   flex: 1;
-  padding-left: calc((95 / 1920) * 100vw);
+  padding-left: calc((50 / 1920) * 100vw);
   display: flex;
   justify-content: center;
   flex-direction: column;
