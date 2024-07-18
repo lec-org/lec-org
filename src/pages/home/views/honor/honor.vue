@@ -1,10 +1,8 @@
 <script setup lang="ts">
-
-import ImgCarousel from '@/components/honor/img-carousel.vue'
-import HonorHeader from '@/components/honor/honor-header.vue'
+import ImgCarousel from './img-carousel.vue'
+import HonorHeader from './honor-header.vue'
 import LecLogo from '@/assets/images/lc-logo.png'
 import ImgGroup from "./honor-imgs.ts";
-
 </script>
 
 <template>

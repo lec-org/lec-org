@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-	import Honor from '@/components/honor/honor.vue'
+	import Honor from './views/honor/honor.vue'
 </script>
 
 <style scoped></style>
