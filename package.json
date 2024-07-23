@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc -b && vite build",
+		"build_for_github_pages": "vue-tsc -b && vite build --base /lec-org/",
 		"preview": "vite preview",
 		"lint": "npx eslint",
 		"test": "vitest run",

@@ -33,3 +33,15 @@
 	display: flex;
 	flex-direction: column;
 }
+
+@font-face {
+	/*描边字体*/
+	font-family: 'londrina-outline';
+	
+	src: url(/fonts/LondrinaOutline-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(/fonts/Roboto-MediumItalic.ttf);
+}
