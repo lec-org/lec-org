@@ -13,6 +13,8 @@
 <style scoped>
 /* 隐藏滚动条 */
 .home-container {
+	height: 100vh;
+	overflow: scroll;
   -ms-overflow-style: none; /* 适用于Internet Explorer 和 Edge */
   scrollbar-width: none; /* 适用于Firefox */
 }
