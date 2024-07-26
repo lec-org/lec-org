@@ -13,8 +13,17 @@
 <style scoped>
 /* 隐藏滚动条 */
 .home-container {
+	height: 100vh;
+	overflow: scroll;
   -ms-overflow-style: none; /* 适用于Internet Explorer 和 Edge */
   scrollbar-width: none; /* 适用于Firefox */
+
+	scroll-snap-type: y mandatory;
+}
+
+.home-container > * {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 .home-container::-webkit-scrollbar {
