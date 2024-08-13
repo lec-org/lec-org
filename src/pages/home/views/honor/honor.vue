@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import ImgCarousel from './img-carousel.vue'
-import HonorHeader from './honor-header.vue'
-import LecLogo from '@/assets/images/lc-logo.png'
-import ImgGroup from "./honor-imgs.ts";
+	import ImgCarousel from './img-carousel.vue'
+	import HonorHeader from './honor-header.vue'
+	import LecLogo from '@/assets/images/lc-logo.png'
+	import ImgGroup from './honor-imgs.ts'
 </script>
 
 <template>
 	<div class="honor-page">
-		<honor-header/>
+		<honor-header />
 		<div class="honor-content">
 			<div class="gradient-layer"></div>
 			<div class="year">2024</div>
 			<div class="lec-info">
 				<span class="lec-logo-container">
-					<img :src="LecLogo" alt="lec logo"/>
+					<img :src="LecLogo" alt="lec logo" />
 				</span>
 
 				<span class="lec-directions">
@@ -37,97 +37,98 @@ import ImgGroup from "./honor-imgs.ts";
 </template>
 
 <style scoped>
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
-.honor-page {
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-}
-
-.honor-content {
-	flex: 1;
-	z-index: 1;
-	background-color: white;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-}
-
-.year {
-	font-size: 200px;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 3px white;
-	position: absolute;
-	font-family: "Roboto", sans-serif;
-  font-weight: 500;
-	font-style: italic;
-	right: 30px;
-	top: 30px;
-	z-index: 2;
-}
-
-.carousel-container {
-	height: 100%;
-	overflow: visible;
-	transform: rotate(10deg);
-	transform-origin: top right;
-}
-
-.img-carousel-item {
-	height: 33%;
-	/* filter: saturate(50%); */
-}
-
-.honor-content .gradient-layer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to right, #4fd6e5, #5ef5c9);
-	mix-blend-mode: multiply;
-	z-index: 2;
-}
-
-.lec-info {
-	position: absolute;
-	bottom: 5vh;
-	left: 4vw;
-	display: flex;
-	align-items: center;
-	z-index: 2;
-}
-
-.lec-logo-container {
-	width: 80px;
-	height: 80px;
-	background: linear-gradient(to right top, #5ef5c9 50%, #4fd6e5);
-	border-radius: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 0 0 10px -2px #fff, /* 外部发光 */
-               0 0 20px -2px #fff; /* 更强的外部发光 */
-}
-
-.lec-directions {
-	margin-left: 20px;
-}
-
-.lec-direction-item {
-	font-size: 19px;
-	line-height: 23px;
-	padding: 0 5px;
-	background-color: black;
-	color: white;
-	border-radius: 5px;
-	font-weight: bold;
-
-	&:not(:first-child) {
-		margin-left: 10px;
+	/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+	.honor-page {
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
 	}
-}
+
+	.honor-content {
+		flex: 1;
+		z-index: 1;
+		background-color: white;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	.year {
+		font-size: 200px;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 3px white;
+		position: absolute;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+		font-style: italic;
+		right: 30px;
+		top: 30px;
+		z-index: 2;
+	}
+
+	.carousel-container {
+		height: 100%;
+		overflow: visible;
+		transform: rotate(10deg);
+		transform-origin: top right;
+	}
+
+	.img-carousel-item {
+		height: 33%;
+		/* filter: saturate(50%); */
+	}
+
+	.honor-content .gradient-layer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, #4fd6e5, #5ef5c9);
+		mix-blend-mode: multiply;
+		z-index: 2;
+	}
+
+	.lec-info {
+		position: absolute;
+		bottom: 5vh;
+		left: 4vw;
+		display: flex;
+		align-items: center;
+		z-index: 2;
+	}
+
+	.lec-logo-container {
+		width: 80px;
+		height: 80px;
+		background: linear-gradient(to right top, #5ef5c9 50%, #4fd6e5);
+		border-radius: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow:
+			0 0 10px -2px #fff,
+			/* 外部发光 */ 0 0 20px -2px #fff; /* 更强的外部发光 */
+	}
+
+	.lec-directions {
+		margin-left: 20px;
+	}
+
+	.lec-direction-item {
+		font-size: 19px;
+		line-height: 23px;
+		padding: 0 5px;
+		background-color: black;
+		color: white;
+		border-radius: 5px;
+		font-weight: bold;
+
+		&:not(:first-child) {
+			margin-left: 10px;
+		}
+	}
 </style>
