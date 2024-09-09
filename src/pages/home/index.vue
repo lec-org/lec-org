@@ -1,5 +1,5 @@
 <template>
-	<div class="home-container">
+	<div class="home-container" ref="home">
 		<welcome />
 		<overview />
 		<honor />
@@ -9,7 +9,36 @@
 <script setup lang="ts">
 	import Honor from './views/honor/honor.vue'
 	import welcome from './views/welcome/welcome.vue'
-	import overview from './views/overview/overview.vue'
+import overview from './views/overview/overview.vue'
+	import { nextTick, onMounted,ref } from 'vue';
+
+	const home = ref()
+	let i = 0
+	const scrollHeights = [0, 0, 0]; 
+
+	onMounted(() => {
+		nextTick(() => {
+			
+			const container = home.value;
+			if (container) {
+				const children = container.children;
+				for (let index = 0; index < children.length; index++) {
+					scrollHeights[index] = (children[index] as HTMLElement).offsetHeight;
+				}
+			}
+
+			setInterval(() => {
+				console.log('1')
+				i++
+				if (i > 3) i = 0
+				const scrollPosition = scrollHeights.slice(0, i).reduce((sum, height) => sum + height, 0);
+				home.value!.scrollTo({
+					top: scrollPosition,
+					behavior: 'smooth'
+				})
+			}, 5000) 
+		});
+	})
 </script>
 
 <style scoped>
